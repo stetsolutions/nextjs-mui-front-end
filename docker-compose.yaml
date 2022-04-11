@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  next:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: dev
+    container_name: next
+    image: localhost/nextjs-mui-front-end
+    ports:
+      - 3000:3000
